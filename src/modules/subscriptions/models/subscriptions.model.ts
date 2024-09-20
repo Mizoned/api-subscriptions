@@ -15,6 +15,9 @@ export class SubscriptionsModel extends Model<SubscriptionsModel, SubscriptionsC
 	@Column({ type: DataTypes.INTEGER, unique: true, autoIncrement: true, primaryKey: true })
 	id: number;
 
+	@Column({ type: DataTypes.STRING, allowNull: false })
+	name: string;
+
 	@Column({ type: DataTypes.FLOAT, allowNull: false })
 	price: number;
 
